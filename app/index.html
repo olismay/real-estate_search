@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real Estate</title>
+    <link href="css/style.min.css" rel="stylesheet">
+</head>
+
+<body class="page-body">
+    <svg style="display: none">
+        <symbol id="arrow" viewBox="0 0 15 25" >        
+           <path d="M1 1L5.043 8.41667L1 15.8333" stroke="#363636"/>
+        </symbol>            
+    </svg>    
+    <main class="page-main">
+        <h1 class="visually-hidden">Real Estate</h1>
+
+        <section class="developments">
+            <h2 class="developments__heading">Our Latest Developments</h2>
+            <div class="developments__search-input developments__search-input--wrapper">
+                <label class="developments__search-input--description">Filter
+                <input 
+                    class="developments__search-input developments__search-input--bar"
+                    type="text" 
+                    name="search-input" 
+                    id="search-input"                    
+                >
+                </label>
+            </div> 
+         
+            <ul class="developments__list" id="developments-list">              
+            </ul>
+
+            <button class="developments__button" type="button" tabindex="0" aria-label="See more">
+                See more
+                <svg class="developments__svg-icon" width="10"  height="20" viewBox="0 0 15 25" >
+                    <use xlink:href="#arrow"></use>
+                </svg>
+            </button>
+
+        </section>
+
+
+    </main>
+
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
